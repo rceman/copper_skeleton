@@ -1,4 +1,8 @@
 {
+    "name": "rceman/copper_skeleton",
+    "type": "project",
+    "license": "MIT",
+    "description": "A minimal Copper project recommended to create bare bones applications",
     "require": {
         "rceman/copper": "^1.0"
     },
