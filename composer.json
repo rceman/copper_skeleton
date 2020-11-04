@@ -4,7 +4,7 @@
     "license": "MIT",
     "description": "A minimal Copper project recommended to create bare bones applications",
     "require": {
-        "rceman/copper": "^1.0"
+        "rceman/copper": "v1.0.8"
     },
     "autoload": {
         "psr-4": {
