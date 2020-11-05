@@ -2,7 +2,7 @@ The Copper Skeleton is a minimal and empty [Copper][1] project which you can bas
 
 Requirements
 ------------
-- PHP 5.6.3 or higher
+- PHP 7.0 or higher
 
 Installation
 ------------
