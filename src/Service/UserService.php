@@ -4,7 +4,6 @@
 namespace App\Service;
 
 use App\Entity\User;
-use Copper\Component\Auth\AbstractUser;
 
 class UserService
 {
@@ -31,7 +30,12 @@ class UserService
 
         foreach (static::DEFAULTS as $entry) {
             if ($id === $entry["id"])
-                $user = new AbstractUser($entry["id"], $entry["login"], $entry["role"], $entry["email"]);
+                $user = User::fromArray([
+                    "id" => $entry["id"],
+                    "login" => $entry["login"],
+                    "role" => $entry["role"],
+                    "email" => $entry["email"]
+                ]);
         }
 
         return $user;

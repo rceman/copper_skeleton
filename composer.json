@@ -4,7 +4,8 @@
     "license": "MIT",
     "description": "A minimal Copper project recommended to create bare bones applications",
     "require": {
-        "rceman/copper": "v1.0.8"
+        "php": ">=7.0",
+        "rceman/copper": "v1.0.9"
     },
     "autoload": {
         "psr-4": {
