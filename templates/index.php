@@ -1,7 +1,11 @@
 <?php /** @var \Copper\Component\Templating\ViewHandler $view */
 
 use App\Entity\User;
-use App\Service\UserService; ?>
+use App\Service\UserService;
+
+$user = $view->auth->user(User::class);
+
+?>
 
 <?= $view->render('header') ?>
 
@@ -20,6 +24,12 @@ use App\Service\UserService; ?>
 
 </ul>
 <h4><?= $view->out($view->data('message')) ?></h4>
+
+<?php
+    if ($view->auth->check())
+        echo "<div>Logged-In User Email: $user->email</div>"
+?>
+
 <table border="1">
     <tr>
         <td>ID</td>
