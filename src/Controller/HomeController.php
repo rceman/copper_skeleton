@@ -2,8 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
-use Copper\Component\FlashMessage\FlashMessage;
+use App\Resource\UserResource;
 use Copper\Controller\AbstractController;
 
 class HomeController extends AbstractController
@@ -16,6 +15,10 @@ class HomeController extends AbstractController
             'head_meta_author' => '{enter your name here}',
             'message' => 'Welcome to your Application!'
         ];
+
+        $res = new UserResource();
+
+        var_dump($res);
 
         return $this->render('index', $parameters);
     }
